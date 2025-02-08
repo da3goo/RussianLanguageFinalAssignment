@@ -176,10 +176,7 @@ async def guess_game_start(update: Update, context: ContextTypes.DEFAULT_TYPE) -
 
 
 async def guess_difficulty_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    """
-    Обрабатывает выбор уровня сложности в игре "Угадай, что сказать" и генерирует ситуацию с вариантами ответа.
-    Также, если нажата кнопка "Главная", возвращает пользователя в главное меню.
-    """
+
     query = update.callback_query
     await query.answer()
     #
